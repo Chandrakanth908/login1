@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+            body {
+            margin: 0;
+            padding: 0;
+            background: rgb(221, 228, 163);
+        }
+           .main{ 
+               background: linear-gradient(45deg ,#fff,rgb(35, 230, 197));
+               max-width: 20%;
+               padding: 100px;
+               margin-left: 30%;
+               margin-top: 10%;
+               box-shadow: 0 15px 15px rgb(109, 182, 26);
+               border-radius: 50%;
+           }
+           .cl button:hover{
+               background-color: darksalmon;
+
+           }
+           
+       </style>
+    </head>
+    <body>
+        <div class="main">
+        <form onsubmit="return login()">
+        <div>
+            <label>UserName : </label>
+            <input id='email' name='email' type="text" required>
+        </div>
+        <br>
+        <div>
+            <label>Password : </label>
+            <input id='pswd' name ='pswd' type="password" required>
+        </div>
+        <br>
+        <div class="cl">
+            <button> Submit</button>
+        </div>
+        <div>
+            <p id='result'></p>
+        </div>
+         <script src="./login.js"></script>
+        </form>
+    </div>
+    </body>
+</html>
